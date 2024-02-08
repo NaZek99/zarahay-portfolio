@@ -1,0 +1,9 @@
+.menu {
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    border-left: 1px solid #ccc;
+  }
+  

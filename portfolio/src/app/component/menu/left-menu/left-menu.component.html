@@ -1,0 +1,25 @@
+<div class="menu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <h2>Menu Gauche</h2>
+
+    <!-- Barre de recherche -->
+  <div class="search-container">
+    <input type="text" placeholder="Rechercher..." [(ngModel)]="searchTerm">
+    <button class="search-button" (click)="onSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+
+  <!-- Filtre -->
+  <div class="filter-container">
+    <label for="filter">Filtre :</label>
+    <select id="filter">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <!-- Ajoutez d'autres options au besoin -->
+    </select>
+  </div>
+
+  <!-- Bouton Retour -->
+  <button class="back-button">Retour</button>
+</div>
+  

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<ul>
+    <li class="nav-item">
+        <a href="#hero">Acceuil</a>
+    </li>
+    <li class="nav-item">
+        <a href="#apropos">A propos</a>
+    </li>
+
+    <h1>Zarahay</h1>
+
+    <li class="nav-item">
+        <a href="#activite">Activités</a>
+    </li>
+    <li class="nav-item">
+        <a href="#contact">Contact</a>
+    </li>
+    <a href="javascript:void(0);" class="icon" (click)="toggleNavMenu()"><i class="fa fa-bars"></i></a>
+</ul>
+<div [ngClass]="displayMenu? 'hide resp-nav': 'hide resp-nav-hide'">
+    <a href="#acceuil">Acceuil</a>
+    <a href="#apropos">A propos</a>
+    <a href="#activite">Activités</a>
+    <a href="#contact">Contact</a>
+</div>

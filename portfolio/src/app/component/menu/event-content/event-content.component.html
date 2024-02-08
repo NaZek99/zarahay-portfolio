@@ -1,0 +1,33 @@
+<!-- event-content.component.html -->
+<!-- <div class="posts-container">
+    <div *ngFor="let post of posts$ | async" class="post-item">
+      <p>{{ post.title }}</p>
+    </div>
+  </div> -->
+  <div >
+    <div *ngFor=" let element of listeEvent" >
+      <div *ngIf="!element.termine && element.visible" class="draft">
+        <div   class="listeEvent" [ngStyle]="{'background-image': 'url(' + element.absolute_path+ ')'}">
+            <h2>{{element.nom}}</h2>
+            <p> description : </p> <br>
+            <p>{{element.description}}</p>
+            <p>date de fin : {{element.date.toLocaleDateString('en-GB')}}</p>
+        </div>
+        <div class="mini-menu">
+           <h2>en cours  .....</h2>
+        </div>
+      </div>
+
+      <div *ngIf="element.termine && element.visible" class="draft">
+        <div   class="listeEvent" [ngStyle]="{'background-image': 'url(' + element.absolute_path+ ')'}">
+            <h2>{{element.nom}}</h2>
+            <p> description : </p> <br>
+            <p>{{element.description}}</p>
+            <p>date de fin : {{element.date.toLocaleDateString('en-GB')}}</p>
+        </div>
+        <div class="mini-menu">
+           <h2>evenement terminé</h2>
+        </div>
+      </div>
+    </div>
+</div>

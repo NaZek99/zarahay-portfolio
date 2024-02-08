@@ -1,0 +1,16 @@
+<div class="slideshow-container">
+
+    <div class="mySlides fade" *ngFor="let slide of slides; let i = index">
+        <img class="slideshow-image" [src]="slide.image">
+        <div class="text">{{slide.caption}}</div>
+    </div>
+
+    <a class="previous" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+    <div class="dot-container">
+        <span class="dot" *ngFor="let dot of dots; let i = index"></span>
+    </div>
+
+</div>
+

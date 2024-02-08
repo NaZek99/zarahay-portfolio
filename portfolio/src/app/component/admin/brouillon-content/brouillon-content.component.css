@@ -1,0 +1,52 @@
+.floating-window {
+
+    border-radius: 20px;
+    ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 75%;
+    overflow: auto;
+    /* Permet le défilement si le contenu dépasse la hauteur définie */
+    background-color: #007BFF;
+}
+
+.tete {
+    display: flex;
+    justify-content: center;
+}
+
+#fermer {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.historiques {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.draft {
+    border-radius: 20px;
+    height: 230px;
+    width: 200px;
+    border: solid 1px black;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.mini-menu {
+    display: flex;
+    justify-content: space-around;
+}

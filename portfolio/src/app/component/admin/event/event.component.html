@@ -1,0 +1,44 @@
+<div class="form" *ngIf="!lien.toUpdate">
+  <form>
+    <label for="eventName">Nom de l'Événement:</label>
+    <input type="text" id="eventName" name="eventName" [(ngModel)]="donneesBrouillons.nom" required>
+
+    <label for="eventDate">Date de l'Événement:</label>
+    <input type="date" id="eventDate" name="eventDate" [(ngModel)]="donneesBrouillons.date" required>
+
+    <label for="eventDescription">Description de l'Événement:</label>
+    <textarea id="eventDescription" name="eventDescription" [(ngModel)]="donneesBrouillons.description" rows="4"
+      required></textarea>
+
+    <label for="eventImage" class="custom-file-input"></label>
+    <input class="custom-file-input" id="eventImage" style="display: none;" type="file" (change)="priseImageBrouillon($event)" name="image" required>
+
+    <div class="boutton">
+      <button type="submit" (click)="poster()">Créer l'Événement</button>
+      <button type="submit" (click)="submit()">Enregistrer brouillon</button>
+      <button (click)="lien.displayDraft()">Liste brouillons</button>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="form" *ngIf="lien.toUpdate">
+  <form (ngSubmit)="lien.submitUpdate()">
+    <label for="eventName">Nom de l'Événement:</label>
+    <input type="text" id="eventName" name="eventName" [(ngModel)]="lien.updatedData.nom" required>
+
+    <label for="eventDate">Date de l'Événement:</label>
+    <input type="date" id="eventDate" name="eventDate" [(ngModel)]="lien.updatedData.date" required>
+
+    <label for="eventDescription">Description de l'Événement:</label>
+    <textarea id="eventDescription" name="eventDescription" [(ngModel)]="lien.updatedData.description" rows="4"
+      required></textarea>
+
+    <label for="eventImage">Choisir une image:</label>
+    <input type="file" (change)="lien.priseImageModif($event)" name="image">
+
+    <button type="submit">modifier</button>
+
+  </form>
+</div>

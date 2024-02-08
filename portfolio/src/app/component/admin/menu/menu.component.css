@@ -1,0 +1,9 @@
+.menu {
+    color: wheat;
+    background-color: #007BFF;
+    padding: 20px;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto;
+    position: fixed;
+}

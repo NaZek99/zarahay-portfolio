@@ -1,0 +1,35 @@
+<div *ngIf="lien.draftList">
+    <div class="floating-window">
+        <div class="tete">
+            <img src="../../../../assets/image/fermer.png" alt="" (click)="hideList()" id="fermer">
+            <h2>Listes de vos brouillons</h2>
+        </div>
+        <div *ngFor="let element of listebrouillon">
+            <div *ngIf="!element.termine && element.visible" class="draft">
+                <div class="historiques" [ngStyle]="{'background-image': 'url('+element.absolute_path+')'}">
+                    <h2>{{element.nom}}</h2>
+                    <p> description : </p> <br>
+                    <p>{{element.description}}</p>
+                    <p>date de fin : {{element.date.toLocaleDateString('en-GB')}}</p>
+                </div>
+                <div class="mini-menu">
+                    <img src="../../../../assets/image/supprimer.png" alt="" (click)="supprimmerBrouillon(element)">
+                    <img src="../../../../assets/image/poster3.png" alt="" (click)="postDraft(element)">
+                    <img src="../../../../assets/image/edit4.png" alt="" (click)="lien.updateDraft(element)">
+                </div>
+            </div>
+            <div *ngIf="element.termine && element.visible" class="draft">
+                <div class="historiques" [ngStyle]="{'background-image': 'url(' + element.absolute_path+ ')'}">
+                    <h2>{{element.nom}}</h2>
+                    <p> description : </p> <br>
+                    <p>{{element.description}}</p>
+                    <p>date de fin : {{element.date.toLocaleDateString('en-GB')}}</p>
+                </div>
+                <div class="mini-menu">
+                    <img src="../../../../assets/image/supprimer.png" alt="" (click)="supprimmerBrouillon(element)">
+                    <img src="../../../../assets/image/edit4.png" alt="" (click)="lien.updateDraft(element)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: var(--z-index);
+    background-color: whitesmoke;
+}
+
+.title h1 {
+    text-align: center;
+    color: var(--second-color);
+    margin-top: 0px;
+    padding-top: 1em;
+    font-size: 32px;
+}
+
+.activity-container {
+    display: grid;
+    height: 100vh;
+    background-color: white;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+.card {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.social {
+    grid-area: 1 / 1 / 2 / 3;
+    background-size: cover;
+    height: 100%;
+}
+
+.under {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    flex: 1;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .info {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.under p {
+    color: var(--first-color);
+    font-family: var(--font-quick);
+    font-size: 18px;
+    padding: 10px;
+}
+
+.btn-see {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    margin-top: 2em;
+    width: 120px;
+    height: 35px;
+}
+
+.btn-see a {
+    font-family: var(--font-roboto);
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.info {
+    color: var(--first-color);
+    font-family: var(--font-quick);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.title h2 {
+    font-family: var(--font-quick);
+    font-weight: 600;
+}
+
+.grade {
+    grid-area: 1 / 3 / 3 / 4;
+    background-image: url(../../../assets/image/graduation.jpg);
+    background-size: cover;
+    height: 85%;
+}
+
+.these {
+    grid-area: 2 / 1 / 2 / 2;
+    background-image: url(../../../assets/image/learn.jpg);
+    background-size: cover;
+    height: 70%;
+}
+
+.debat {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../../../assets/image/deabat.jpg);
+    background-size: cover;
+    height: 70%;
+}

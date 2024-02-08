@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.left, .right {
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #f2f2f2;
+}
+
+.right {
+  background-color: #f2f2f2;
+}
+
+.content {
+  flex-grow: 1;
+  box-sizing: border-box;
+}

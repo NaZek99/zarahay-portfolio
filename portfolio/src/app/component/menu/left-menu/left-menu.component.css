@@ -1,0 +1,64 @@
+.menu {
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    border-right: 1px solid #ccc;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .search-button {
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    padding-top: 50px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .back-button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  select option {
+    /* Ajoutez les styles que vous souhaitez pour les options ici */
+    /* Exemple : */
+    font-size: 18px; /* Changer la taille de la police */
+    padding: 8px; /* Ajouter du rembourrage autour des options */
+    border-radius: 5px; /* Enlever le border-radius des options */
+  }

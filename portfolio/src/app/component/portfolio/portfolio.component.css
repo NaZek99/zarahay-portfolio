@@ -1,0 +1,45 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.hero {
+    height: var(--vh-height);
+}
+
+.about {
+    height: var(--vh-height);
+}
+
+.founder {
+    height: var(--vh-height);
+}
+
+.activity {
+    position: relative;
+    height: var(--vh-height);
+}
+
+.testimonial {
+    margin-top: 5em;
+    position: relative;
+    height: var(--vh-height);
+}
+
+.contact {
+    position: relative;
+}
+
+.nif {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

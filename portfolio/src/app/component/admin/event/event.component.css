@@ -1,0 +1,84 @@
+/* event-form.component.css */
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 75%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border-color: green;
+  border-width: 0.5px;
+  box-sizing: border-box;
+}
+
+.custom-file-input::before {
+  content: 'Cliquer ici pour choisir une image';
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+label[for="eventImage"] {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+button:hover, label[for="eventImage"]:hover {
+  background-color: #4CAF50;
+}
+
+.boutton {
+  display: flex;
+  box-sizing: border-box;
+  margin: 2rem auto;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+img {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}

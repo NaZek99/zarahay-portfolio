@@ -1,0 +1,50 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap'); */
+
+
+:root {
+    --first-color: #c9bfbf;
+    --second-color: #1E1E1E;
+    --third-color: rgb(141, 136, 136);
+    --conic-color: conic-gradient(var(--first-color) 0deg 30deg,
+            var(--third-color) 30deg 210deg,
+            var(--first-color) 210deg);
+
+    --z-index: 1;
+    --vh-height: 100vh;
+    --item-percent-top: 70%;
+
+    --margin-top-container: 0;
+    --title-size: 38px;
+    --sub-size: 24px;
+    --par-size: 18px;
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-quick: 'Quicksand', sans-serif;
+    ;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* *::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(187, 199, 184);
+    border-style: groove;
+    border-color: #1E1E1E;
+    border-radius: 15px;
+    border-width: 1px;
+  } */

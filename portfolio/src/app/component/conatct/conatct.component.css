@@ -1,0 +1,152 @@
+.content {
+  background-color: var(--third-color);
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  border-radius: 15px;
+  background-color: darkgray;
+  padding-top: 2rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.info-section {
+  width: 15%;
+  padding-top: 6em;
+  color: var(--first-color);
+  font-family: var(--font-quick);
+}
+
+.in {
+  font-size: 3em;
+}
+
+.form-container {
+  background-color: var(--first-color);
+  width: 35%;
+  border-radius: 10px;
+  border: 1px solid var(--second-color);
+  margin-left: 5em;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.form {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  position: relative;
+  margin-top: 2em;
+}
+
+.form input {
+  width: 90%;
+  background-color: transparent;
+  color: var(--second-color);
+  border: none;
+  border-bottom: 1px solid var(--second-color);
+  outline: none;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.form label {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--second-color);
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.form input:focus~label,
+.form input:valid~label {
+  top: -25px;
+  color: var(--second-color);
+  font-size: 12px;
+}
+
+.form textarea {
+  width: 90%;
+  content: "";
+  height: 20px;
+  resize: none;
+  background-color: transparent;
+  color: var(--second-color);
+  border: none;
+  border-bottom: 1px solid var(--second-color);
+  outline: none;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.form textarea:focus~label,
+.form textarea:valid~label {
+  top: -25px;
+  color: var(--second-color);
+  font-size: 12px;
+}
+
+.form-section h2 {
+  font-family: var(--font-quick);
+  margin-top: 1em;
+}
+
+button {
+  margin-top: 5em;
+  color: var(--first-color);
+  background: var(--third-color);
+  border: none;
+  height: 45px;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5em;
+  margin-left: -2.5em;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+}
+
+.nif {
+  color: var(--first-color);
+  font-family: var(--font-roboto);
+  padding-top: 8em;
+  background-color: var(--third-color);
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-content {
+  margin-top: -5em;
+  height: 210px;
+  background-color: #0e9170;
+}
+
+.siege p{
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.phone p {
+  margin-bottom: 12px;
+}
+
+.phone span{
+  font-weight: 300;
+}
+
+.thx i{
+  margin-left: 15px;
+  font-size: 20px;
+}
