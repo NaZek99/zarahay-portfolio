@@ -8,10 +8,12 @@
     overflow-wrap: break-word;
     overflow: hidden;
     z-index: var(--z-index);
-    border-style: groove;
-    box-shadow: 0 30px 150px darkgray;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+    box-shadow: 0 30px 150px var(--background-color);
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
 }
 
 .about-section {

@@ -1,12 +1,13 @@
 .container {
   position: relative;
-  background-color: var(--third-color);
+  background-color: var(--background-color);
   overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .title {
@@ -24,6 +25,11 @@
 
 .card-container {
   width: 50%;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
   overflow-y: auto;
 }
 
@@ -72,6 +78,7 @@
 
 .founder p {
   text-wrap: wrap;
+  text-align: justify;
   color: var(--first-color);
   font-family: var(--font-roboto);
   font-size: 16px;
@@ -96,8 +103,8 @@
 }
 
 .card-container::-webkit-scrollbar {
-  width: 10px;
-  background-color: rgb(187, 199, 184);
+  width: 5px;
+  background-color: var(--border-color);
   border-style: groove;
   border-radius: 15px;
   border-width: 1px;

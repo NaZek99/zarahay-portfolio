@@ -3,7 +3,10 @@
     width: 100%;
     height: 100vh;
     z-index: var(--z-index);
-    background-color: whitesmoke;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+    background-color: var(--third-color);
 }
 
 .title h1 {
@@ -20,19 +23,13 @@
     background-color: white;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
 }
 
 .card {
     display: flex;
     overflow: hidden;
-    height: 100%;
-}
-
-.social {
-    grid-area: 1 / 1 / 2 / 3;
-    background-size: cover;
     height: 100%;
 }
 
@@ -92,23 +89,45 @@
     font-weight: 600;
 }
 
+.social {
+    grid-area: 1 / 1 / 2 / 3;
+    background-size: cover;
+    height: 100%;
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+}
+
 .grade {
     grid-area: 1 / 3 / 3 / 4;
     background-image: url(../../../assets/image/graduation.jpg);
     background-size: cover;
-    height: 85%;
+    height: 97.53%;
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
 }
 
 .these {
     grid-area: 2 / 1 / 2 / 2;
     background-image: url(../../../assets/image/learn.jpg);
     background-size: cover;
-    height: 70%;
+    height: 95%;
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
 }
 
 .debat {
     grid-area: 2 / 2 / 3 / 3;
     background-image: url(../../../assets/image/deabat.jpg);
     background-size: cover;
-    height: 70%;
+    height: 95%;
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
 }

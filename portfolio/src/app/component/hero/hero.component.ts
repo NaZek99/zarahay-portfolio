@@ -20,7 +20,7 @@ export class HeroComponent {
   slideIndex = 1;
   slides = [
     { image: "../../../assets/image/gorbache.jpg", caption: "description de l'image 1" },
-    { image: '../../../assets/image/asian.jpg', caption: "description de l'image 2" },
+    { image: '../../../assets/image/share.jpg', caption: "description de l'image 2" },
     { image: '../../../assets/image/reunion.jpg', caption: "description de l'image 3" }
   ];
 

@@ -4,13 +4,26 @@
 
 
 :root {
-    --first-color: #c9bfbf;
-    --second-color: #1E1E1E;
-    --third-color: rgb(141, 136, 136);
+    --first-color: white;
+    --second-color: #575c43;
+    --third-color: whitesmoke;
+    --background-color: #113;
     --conic-color: conic-gradient(var(--first-color) 0deg 30deg,
             var(--third-color) 30deg 210deg,
             var(--first-color) 210deg);
 
+    --border-color: rgb(30, 153, 224);
+    --border-width: 1px;
+    --border-style: groove;
+    --border-radius: 15px;
+
+    --hover-color: linear-gradient(
+        45deg,
+        transparent 5%,
+        rgb(30, 153, 224) 50%,
+        transparent 99%
+      );
+    --form-border-color: #f23;
     --z-index: 1;
     --vh-height: 100vh;
     --item-percent-top: 70%;
@@ -39,12 +52,3 @@ body {
 * {
     box-sizing: border-box;
 }
-
-/* *::-webkit-scrollbar {
-    width: 10px;
-    background-color: rgb(187, 199, 184);
-    border-style: groove;
-    border-color: #1E1E1E;
-    border-radius: 15px;
-    border-width: 1px;
-  } */
